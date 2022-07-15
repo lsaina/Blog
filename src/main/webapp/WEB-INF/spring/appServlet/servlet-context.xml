@@ -38,6 +38,10 @@
 	<beans:bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
 		<beans:constructor-arg ref="sqlSession"/>
 	</beans:bean>
+	<!--  파일업로드 객체 생성 -->
+	<beans:bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<beans:property name="maxUploadSize" value="10485760"></beans:property>
+	</beans:bean>
 	
 	<context:component-scan base-package="kr.co.blog" />
 	<context:component-scan base-package="kr.co.member" />
