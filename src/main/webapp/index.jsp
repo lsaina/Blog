@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Blog</title>
 </head>
 <body>
-11
+	<a href="/fileupload.do">파일 업로드 테스트</a>
 </body>
 </html>
